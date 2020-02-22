@@ -41,7 +41,7 @@ public class AppController {
         Product product = productService.get(id);
         modelAndView.addObject("product",product);
         return modelAndView;
-        
+
     }
     @RequestMapping("/delete/{id}")
     public String deleteProduct(@PathVariable(name = "id") Long id){
