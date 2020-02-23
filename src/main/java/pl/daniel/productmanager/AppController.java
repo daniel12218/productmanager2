@@ -21,7 +21,7 @@ public class AppController {
         model.addAttribute("listProducts",listProducts);
         return "index";
     }
-    @RequestMapping("/new")
+    @RequestMapping("/newa")
     public String showNewProductForm(Model model){
         Product product = new Product();
         model.addAttribute("product",product);
